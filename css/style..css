@@ -132,3 +132,14 @@ body {
   text-decoration: line-through;
   cursor: pointer;
 }
+
+@media only screen and (max-width: 450px) and (min-width: 349px) {
+  html {
+    font-size: 80.5%;
+  }
+}
+@media only screen and (max-width: 348px) and (min-width: 0px) {
+  html {
+    font-size: 70.5%;
+  }
+}
