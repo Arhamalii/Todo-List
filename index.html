@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo-App</title>
+    <link rel="stylesheet" href="./css/style..css" />
+    <!-- google fonts imports -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- boxicons imports  -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="title">
+          <h2>Todo-App</h2>
+          <i class="bx bx-list-ul bx-flip-vertical bx-tada"></i>
+        </div>
+      </header>
+      <form class="input-box">
+        <input
+          type="text"
+          placeholder="Add Your Tasks"
+          name="addTasks"
+          maxlength="25"
+        />
+        <button type="submit" class="add-btn">
+          <i class="bx bx-plus"></i>
+        </button>
+      </form>
+      <div class="list">
+        <ul></ul>
+      </div>
+      <footer><small>All Right Reserved Arham &copy; 2023 </small></footer>
+    </div>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+}
+:root {
+  --color-default: #fff;
+  --color-primary: #6b6b6b;
+  --secondary-primary: #8e2de2;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(to right, #8e2de2, #4a00e0);
+  overflow-x: hidden;
+}
+.container {
+  max-width: 24em;
+  min-height: 5rem;
+  background: var(--color-default);
+  border-radius: 0.5rem;
+  box-shadow: 0px 1px 6px 5px #8800ff;
+  margin: 6rem auto;
+  padding: 1rem 1rem 0 1rem;
+}
+.title {
+  display: flex;
+  color: var(--secondary-primary);
+  width: 100%;
+  height: 2rem;
+  padding: 0 1rem;
+  justify-content: space-between;
+}
+.title h2 {
+  font-size: 1.7rem;
+  color: var(--color-secondary);
+}
+.title i {
+  font-size: 2rem;
+  color: var(--color-secondary);
+}
+.input-box {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 2rem;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  color: var(--color-primary);
+  position: relative;
+}
+
+.input-box input {
+  height: 1.5rem;
+  border: 0.2rem solid var(--secondary-primary);
+  padding: 0.8rem 0.4rem;
+  border-radius: 5px;
+  flex: 1;
+}
+.add-btn {
+  display: flex;
+  font-size: 1.5rem;
+  font-weight: 10000;
+  border-radius: 5px;
+  position: absolute;
+  right: 21px;
+  align-items: center;
+  border: none;
+  color: var(--secondary-primary);
+  background: transparent;
+}
+
+.input-box input:focus {
+  outline: none;
+}
+.list ul {
+  list-style: none;
+  margin-bottom: 1.3rem;
+}
+.list li {
+  display: flex;
+  margin: 1.2rem auto;
+  padding: 0.3rem 1rem;
+  justify-content: space-between;
+  border-radius: 2px;
+  box-shadow: 0px 1px 7px 2px #bebebe;
+}
+.list li p {
+  font-size: 1.12rem;
+  color: var(--color-primary);
+  color: #5f5f5f;
+  flex: 1;
+}
+.list ul li .edit-btn,
+.check-btn {
+  display: flex;
+  margin-right: 0.54rem;
+  font-size: 1.34rem;
+  font-weight: bolder;
+  align-items: center;
+  color: var(--secondary-primary);
+  background-color: transparent;
+  border: none;
+  transition: 0.1s ease-out;
+  cursor: pointer;
+}
+.list ul li .edit-btn:hover,
+.list ul li .delete-btn:hover {
+  transform: scale(1.1);
+}
+
+.list ul li .delete-btn {
+  display: flex;
+  font-size: 1.34rem;
+  font-weight: bolder;
+  align-items: center;
+  color: #ae5858;
+  background-color: transparent;
+  border: none;
+  transition: 0.1s ease-out;
+  cursor: pointer;
+}
+.container footer {
+  color: #8800ff;
+  font-weight: 600;
+  text-align: center;
+  padding-bottom: 0.3rem;
+}
+.completed {
+  text-decoration: line-through;
+  cursor: pointer;
+}
